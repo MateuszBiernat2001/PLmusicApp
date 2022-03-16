@@ -1,3 +1,3 @@
 # PLmusicApp
 
-https://github.com/MateuszBiernat2001/PLmusicApp
+https://mateuszbiernat2001.github.io/PLmusicApp/
