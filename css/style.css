@@ -48,7 +48,7 @@ nav.nav .wrapper-nav {
 }
 
 nav.nav .wrapper-nav a.logo {
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
   margin-left: 25px;
   font-family: 'Hubballi', cursive;
@@ -173,7 +173,6 @@ nav.nav .wrapper-nav ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 800px;
   width: 100%;
 }
 
@@ -283,6 +282,93 @@ nav.nav .wrapper-nav ul li a:hover {
 
 .music-section .music-section-wrapper .specials-music-container p {
   color: white;
+}
+
+.all-songs-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 55px;
+}
+
+.all-songs-section p {
+  font-size: 34px;
+  color: white;
+  margin-bottom: 45px;
+  font-weight: bold;
+}
+
+.all-songs-section .wrapper-all-songs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1400px;
+}
+
+.all-songs-section .wrapper-all-songs .music-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 450px;
+  max-width: 250px;
+  margin: 20px 85px;
+  text-decoration: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.all-songs-section .wrapper-all-songs .music-item img {
+  height: 80%;
+  width: 100%;
+  background-color: rebeccapurple;
+  border: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.all-songs-section .wrapper-all-songs .music-item h1 {
+  font-size: 20px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.all-songs-section .wrapper-all-songs .music-item p {
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
 }
 
 @media (min-width: 1000px) {
