@@ -254,7 +254,6 @@ nav.nav .wrapper-nav ul li a:hover {
 .music-section .music-section-wrapper .specials-music-container .music-item img {
   height: 80%;
   width: 100%;
-  background-color: rebeccapurple;
   border: none;
   -o-object-fit: cover;
      object-fit: cover;
