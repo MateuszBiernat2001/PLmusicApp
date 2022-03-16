@@ -12,7 +12,7 @@ const getSongs = () => {
 
       const getAllSongs = () => {
         for (let i = 0; i < musicArr.length; i++) {
-          const item = document.createElement('a');
+         const item = document.createElement('a');
           const title = document.createElement('p');
           const author = document.createElement('p');
           const img = document.createElement('img');
@@ -44,6 +44,7 @@ const getSongs = () => {
           const title = document.createElement('p');
           const author = document.createElement('p');
           const img = document.createElement('img');
+          
           item.setAttribute('href', musicArr[i].link);
           item.classList.add('music-item');
           item.appendChild(img);
@@ -55,39 +56,10 @@ const getSongs = () => {
           itemSection.appendChild(item);         
           errorText.textContent = '';
         }
-        searchInput.innerHTML = '';
-        specialSongs.length = 0;
+        searchInput.value = ''; 
+        console.log(specialSongs)
       }
       searchInput.addEventListener('change', getSpecialSongs);
     });
 };
 getSongs();
-
-
-
-
-/*
-      const getSpecialSongs = () => {
-        for (let i = 0; i < musicArr.length; i++) {
-          if (musicArr[i].authorName.toLowerCase() === searchInput.value.toLowerCase()) {
-            const item = document.createElement('a');
-            const title = document.createElement('p');
-            const author = document.createElement('p');
-            const img = document.createElement('img');
-            item.setAttribute('href', musicArr[i].link);
-            item.classList.add('music-item');
-            item.appendChild(img);
-            item.appendChild(title);
-            item.appendChild(author);
-            title.innerHTML = musicArr[i].title;
-            author.innerHTML = musicArr[i].authorName;
-            img.setAttribute('src', musicArr[i].img);
-            itemSection.appendChild(item);
-          } else if (musicArr[i].authorName !== searchInput.value) {
-            errorText.innerHTML = 'Chyba nie mamy nic dla Ciebie :(';
-          }
-        }
-        searchInput.value = '';
-        errorText.innerHTML = '';
-      };
-      searchInput.addEventListener('change', getSpecialSongs);*/ 
